@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1122.52, initial-scale=1.0, user-scalable=no">
-    <title>ADeX 효과 분석 보고서</title>
+    <title>cms-report</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" as="style" crossorigin>
     <style>
@@ -20,8 +20,8 @@
         <div class="container">
             <div class="header-frame">
                 <div class="title-section">
-                    <h1 class="main-title">ADeX 효과 분석 보고서</h1>
-                    <h2 class="contract-name">{{광고계약명}}</h2>
+                    <h1 class="main-title">Dooh Service 효과 분석 보고서</h1>
+                    <h2 class="contract-name">{{스케줄명}}</h2>
                 </div>
                 <div class="icon-group">
                     <img src="icon-group.png" alt="ADeX 아이콘" class="icon-image">
@@ -60,12 +60,12 @@
             <div class="toc-header">
                 <!-- Breadcrumb 그룹 -->
                 <div class="breadcrumb-group">
-                    <span class="text-광고계약명">{{광고계약명}}</span>
+                    <span class="text-스케줄명">{{스케줄명}}</span>
                     <span class="text-separator">|</span>
                     <span class="text-목차">목차</span>
                 </div>
-                <!-- 공공 미디어 중개 플랫폼 ADeX -->
-                <div class="text-platform">공공 미디어 중개 플랫폼 ADeX</div>
+                <!-- 디지털 옥외광고 통합 시스템 Dooh Service -->
+                <div class="text-platform">디지털 옥외광고 통합 시스템 Dooh Service</div>
             </div>
 
             <!-- 내용 영역: 목차 카드 -->
@@ -78,7 +78,7 @@
                     </div>
                     <!-- 목차 리스트: 섹션 컨테이너 -->
                     <div class="frame-목차리스트">
-                        <h3 class="text-section-title">1. 미디어그룹 상품 및 주요 광고 성과</h3>
+                        <h3 class="text-section-title">1. 미디어그룹 및 주요 광고 성과</h3>
                         <!-- 2. 미디어그룹별 광고 효과 분석: 서브섹션 -->
                         <div class="frame-미디어그룹별광고효과분석">
                             <h4 class="text-subsection-title">2. 미디어그룹별 효과 분석</h4>
@@ -132,7 +132,7 @@
     <section class="page page-divider">
         <div class="container container-divider">
             <div class="divider-content">
-                <h1 class="divider-title">1. 미디어그룹 상품 및 주요 광고 성과</h1>
+                <h1 class="divider-title">1. 미디어그룹 및 주요 광고 성과</h1>
                 <div class="divider-logo">
                     <img src="logo-black.png" alt="ADeX 로고" class="logo-image">
                 </div>
@@ -142,7 +142,7 @@
         </div>
     </section>
 
-    <!-- 페이지 4: 미디어그룹 상품 정보 -->
+    <!-- 페이지 4: 미디어그룹 정보 -->
     <section class="page page-media-info page-performance-2">
         <div class="container container-media-info">
             <!-- head: 헤더 영역 (Frame 10) -->
@@ -151,17 +151,17 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 -->
                 <div class="frame-sub-title">
-                    <h1 class="text-media-title">미디어그룹 상품 정보</h1>
-                    <p class="text-media-subtitle">미디어그룹 상품 및 광고 기간에 대한 정보</p>
+                    <h1 class="text-media-title">미디어그룹 정보</h1>
+                    <p class="text-media-subtitle">미디어그룹 및 광고 기간에 대한 정보</p>
                 </div>
             </div>
 
@@ -189,26 +189,26 @@
                                 <span class="field-text">광고 계약명</span>
                             </td>
                             <td class="field field-value" colspan="1">
-                                <span class="field-text">{{광고계약명}}</span>
+                                <span class="field-text">{{스케줄명}}</span>
                             </td>
                         </tr>
 
                         <!-- 두 번째 행 (동적 항목 반복 가능) -->
-                        <!-- 서버에서 미디어그룹 상품과 미디어 정보를 반복문으로 생성 -->
+                        <!-- 서버에서 미디어그룹과 미디어 정보를 반복문으로 생성 -->
                         <!-- 예시: {{#each 미디어그룹리스트}} 또는 {% for item in 미디어그룹리스트 %} -->
                         <tr class="table-row-middle">
                             <td class="field field-label field-tall">
-                                <span class="field-text">미디어그룹 상품</span>
+                                <span class="field-text">미디어그룹</span>
                             </td>
-                            <!-- Frame 16: 미디어그룹 상품 값 그룹 -->
+                            <!-- Frame 16: 미디어그룹 값 그룹 -->
                             <td class="field field-value field-tall">
                                 <!-- 동적 항목: 서버에서 반복문으로 생성 -->
-                                <!-- 예시: {{#each 미디어그룹상품리스트}} -->
+                                <!-- 예시: {{#each 미디어그룹리스트}} -->
                                 <!--   <div class="field-value-item">{{this}}</div> -->
                                 <!-- {{/each}} -->
-                                <div class="field-value-item">{{미디어그룹상품_1}}</div>
-                                <div class="field-value-item">{{미디어그룹상품_2}}</div>
-                                <div class="field-value-item">{{미디어그룹상품_3}}</div>
+                                <div class="field-value-item">{{미디어그룹_1}}</div>
+                                <div class="field-value-item">{{미디어그룹_2}}</div>
+                                <div class="field-value-item">{{미디어그룹_3}}</div>
                             </td>
                             <td class="field field-label field-tall">
                                 <div class="field-label-content">
@@ -283,12 +283,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 -->
                 <div class="frame-sub-title">
@@ -464,12 +464,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title">
@@ -492,31 +492,6 @@
                 <div class="frame-chart-area">
                     <canvas id="chart-canvas-media-group-population"></canvas>
                 </div>
-
-                <!-- tips: 인사이트 박스 (유사 미디어그룹 선별 안내) -->
-                <div class="frame-insight frame-insight-notice">
-                    <!-- tip title: 아이콘 + 제목 텍스트 -->
-                    <div class="insight-header frame-tip-title">
-                        <!-- tip icon: 아이콘 -->
-                        <img src="tips icon.svg" alt="인사이트 아이콘" class="insight-icon tip-icon">
-                        <!-- 유사 미디어그룹 선별 안내: 제목 텍스트 -->
-                        <span class="insight-notice-title">유사 미디어그룹 선별 안내 ({{유사미디어그룹명}})</span>
-                    </div>
-                    <!-- 인사이트 텍스트 -->
-                    <div class="insight-text frame-insight-notice-text">
-                        <!-- 주요 오디언스 텍스트 -->
-                        <span>주요 오디언스</span>
-                        <!-- 오디언스 정보 -->
-                        <span class="insight-text-group">
-                            <span class="insight-highlight">({{주요오디언스}})</span>
-                        </span>
-                        <span>와 </span>
-                        <!-- 설명 텍스트 -->
-                        <span class="insight-text-line">
-                            <span>&nbsp;동일한 미디어그룹 중 '유동 대비 노출 비율' 이 가장 높은 상품이 선정됩니다. (해당 광고에 운영된 미디어그룹 제외)</span>
-                        </span>
-                    </div>
-                </div>
             </div>
 
             <!-- 페이지 번호 -->
@@ -533,12 +508,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title">
@@ -611,59 +586,6 @@
                                 <td class="field field-value">{{circulation대비ots비율}}%</td>
                                 <td class="field field-value field-value-currency">{{CPM}}원</td>
                             </tr>
-                            <!-- 유사 미디어그룹 헤더 -->
-                            <tr class="similar-media-group-header-row">
-                                <td class="field field-label similar-media-group-header-field" colspan="5">유사 미디어그룹</td>
-                            </tr>
-                            <!-- 반복 종료: {{/each}} 또는 {% endfor %} -->
-                            <!-- 유사 미디어그룹 행 1 - 주요 오디언스가 동일한 -->
-                            <!-- 서버에서 값이 없으면 invisible 처리: style="display: none;" 또는 class="invisible" 추가 -->
-                            <!-- 예시: {{#if 주요오디언스유사미디어그룹}} 또는 {% if 주요오디언스유사미디어그룹 %} -->
-                            <tr class="similar-media-group-row similar-audience">
-                                <!-- Frame 16: 미디어그룹명 (2줄) -->
-                                <td class="field field-value field-tall-similar">
-                                    <div class="field-value-item-similar">
-                                        <div class="field-text-small-similar">주요 오디언스가 동일한</div>
-                                        <div class="field-text-normal">{{주요오디언스유사미디어그룹명}}</div>
-                                    </div>
-                                </td>
-                                <td class="field field-value">{{주요오디언스유사미디어그룹circulation}}명</td>
-                                <td class="field field-value">{{주요오디언스유사미디어그룹ots}}명</td>
-                                <td class="field field-value">{{주요오디언스유사미디어그룹circulation대비ots비율}}%</td>
-                                <td class="field field-value field-value-currency">{{주요오디언스유사미디어그룹CPM}}원</td>
-                            </tr>
-                            <!-- 서버 측 렌더링 예시 (Handlebars):
-                                {{#if 주요오디언스유사미디어그룹}}
-                                <tr class="similar-media-group-row similar-audience">
-                                    <td class="field field-value field-tall-similar">
-                                        <div class="field-value-item-similar">
-                                            <div class="field-text-small-similar">주요 오디언스가 동일한</div>
-                                            <div class="field-text-normal">{{주요오디언스유사미디어그룹.이름}}</div>
-                                        </div>
-                                    </td>
-                                    <td class="field field-value">{{주요오디언스유사미디어그룹.circulation}}명</td>
-                                    <td class="field field-value">{{주요오디언스유사미디어그룹.ots}}명</td>
-                                    <td class="field field-value">{{주요오디언스유사미디어그룹.circulation대비ots비율}}%</td>
-                                    <td class="field field-value field-value-currency">{{주요오디언스유사미디어그룹.CPM}}원</td>
-                                </tr>
-                                {{/if}}
-                                
-                                서버 측 렌더링 예시 (Jinja2):
-                                {% if 주요오디언스유사미디어그룹 %}
-                                <tr class="similar-media-group-row similar-audience">
-                                    <td class="field field-value field-tall-similar">
-                                        <div class="field-value-item-similar">
-                                            <div class="field-text-small-similar">주요 오디언스가 동일한</div>
-                                            <div class="field-text-normal">{{주요오디언스유사미디어그룹.이름}}</div>
-                                        </div>
-                                    </td>
-                                    <td class="field field-value">{{주요오디언스유사미디어그룹.circulation}}명</td>
-                                    <td class="field field-value">{{주요오디언스유사미디어그룹.ots}}명</td>
-                                    <td class="field field-value">{{주요오디언스유사미디어그룹.circulation대비ots비율}}%</td>
-                                    <td class="field field-value field-value-currency">{{주요오디언스유사미디어그룹.CPM}}원</td>
-                                </tr>
-                                {% endif %}
-                            -->
                         </tbody>
                         </table>
                     </div>
@@ -671,31 +593,6 @@
                     <!-- CPM 계산 공식 안내 -->
                     <div class="frame-cpm-formula">
                         <span class="cpm-formula-text">* 주요 오디언스가 동일한 미디어그룹의 CPM = [(해당 미디어그룹의 일 기준 대표 광고료 × 광고 기간 일 수) ÷ 광고 기간동안의 노출인구 수] × 1,000</span>
-                    </div>
-                </div>
-
-                <!-- tips: 인사이트 박스 (유사 미디어그룹 선별 안내) -->
-                <div class="frame-insight frame-insight-notice">
-                    <!-- tip title: 아이콘 + 제목 텍스트 -->
-                    <div class="insight-header frame-tip-title">
-                        <!-- tip icon: 아이콘 -->
-                        <img src="tips icon.svg" alt="인사이트 아이콘" class="insight-icon tip-icon">
-                        <!-- 유사 미디어그룹 선별 안내: 제목 텍스트 -->
-                        <span class="insight-notice-title">유사 미디어그룹 선별 안내 ({{유사미디어그룹명}})</span>
-                    </div>
-                    <!-- 인사이트 텍스트 -->
-                    <div class="insight-text frame-insight-notice-text">
-                        <!-- 주요 오디언스 텍스트 -->
-                        <span>주요 오디언스</span>
-                        <!-- 오디언스 정보 -->
-                        <span class="insight-text-group">
-                            <span class="insight-highlight">({{주요오디언스}})</span>
-                        </span>
-                        <span>와 </span>
-                        <!-- 설명 텍스트 -->
-                        <span class="insight-text-line">
-                            <span>&nbsp;동일한 미디어그룹 중 '유동 대비 노출 비율' 이 가장 높은 상품이 선정됩니다. (해당 광고에 운영된 미디어그룹 제외)</span>
-                        </span>
                     </div>
                 </div>
             </div>
@@ -714,12 +611,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title">
@@ -759,12 +656,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title">
@@ -804,12 +701,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title">
@@ -857,12 +754,12 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
-                        <span class="text-목차-media">미디어그룹 상품 및 주요 광고 성과</span>
+                        <span class="text-목차-media">미디어그룹 및 주요 광고 성과</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title">
@@ -941,14 +838,14 @@
                 <div class="frame-top-title">
                     <!-- top title: Breadcrumb 그룹 -->
                     <div class="frame-top-title-group">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
                         <span class="text-목차-media">미디어그룹별 효과 분석</span>
                         <span class="text-separator-media">></span>
                         <span class="text-미디어그룹명-media">{{미디어그룹명}}</span>
                     </div>
-                    <!-- adex: 공공 미디어 중개 플랫폼 ADeX -->
-                    <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                    <!-- adex: 디지털 옥외광고 통합 시스템 Dooh Service -->
+                    <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
                 </div>
                 <!-- sub title: 타이틀 영역 (Frame 9) -->
                 <div class="frame-sub-title frame-sub-title-media-group">
@@ -960,38 +857,29 @@
                             <span class="text-media-group-subtitle-separator">이며, </span>
                         </div>
                         <div class="frame-subtitle-line-2">
-                            <div class="frame-subtitle-location">
-                                <span class="text-media-group-subtitle"> <p> {{장소적 특징}} </span>
-                            </div>
+                            <span class="text-media-group-subtitle">{{장소적 특징}}</span>
                         </div>
-                    </div>
-
-                    <!-- Frame 29: 이미지 영역 -->
-                    <div class="frame-media-image-area">
-                <!-- Frame 30: 이미지 1 (미디어그룹 지도) -->
-                <div class="frame-media-map-image">
-                    <div
-                        id="map-{{미디어그룹번호}}"
-                        class="media-group-map"
-                        data-lat="{{위도}}"
-                        data-lng="{{경도}}"
-                        aria-label="미디어그룹 지도">
-                    </div>
-                </div>
-                <!-- img_mediapillar_02 1: 이미지 2 (운영 현장 이미지 1) -->
-                <div class="img-mediapillar-02-1">
-                    <img src="{{운영현장이미지1}}" alt="운영 현장 이미지 1" class="media-group-image">
-                </div>
-                <!-- img_mediapillar_02 2: 이미지 3 (운영 현장 이미지 2) -->
-                <div class="img-mediapillar-02-2">
-                    <img src="{{운영현장이미지2}}" alt="운영 현장 이미지 2" class="media-group-image">
-                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Frame 20: 미디어그룹 광고 개요 -->
-            <div class="frame-media-overview">
+            <!-- Frame 1686563155: 콘텐츠 영역 -->
+            <div class="media-detail-content">
+                <!-- 지도와 미디어그룹 광고 개요 컨테이너 -->
+                <div class="frame-media-map-overview-container">
+                    <!-- Frame 30: 지도 영역 -->
+                    <div class="frame-media-map-image">
+                        <div
+                            id="map-{{미디어그룹번호}}"
+                            class="media-group-map"
+                            data-lat="{{위도}}"
+                            data-lng="{{경도}}"
+                            aria-label="미디어그룹 지도">
+                        </div>
+                    </div>
+
+                    <!-- Frame 20: 미디어그룹 광고 개요 -->
+                    <div class="frame-media-overview">
                 <!-- Frame 21: 제목 + 광고 기간 정보 -->
                 <div class="frame-media-overview-header">
                     <h2 class="text-media-group-overview-title">미디어그룹 광고 개요</h2>
@@ -1016,7 +904,7 @@
 
                 <!-- Frame 13: 테이블 형태의 정보들 -->
                 <div class="frame-media-info-table">
-                    <!-- Frame 18: 첫 번째 행 -->
+                    <!-- Frame 18: 첫 번째 행 (미디어 위치) -->
                     <div class="frame-media-info-row-1">
                         <div class="field field-label field-media-group">
                             <span class="field-text">미디어 위치</span>
@@ -1026,7 +914,7 @@
                         </div>
                     </div>
 
-                    <!-- Frame 20: 두 번째 행 -->
+                    <!-- Frame 20: 두 번째 행 (미디어 대수) -->
                     <div class="frame-media-info-row-2">
                         <div class="field field-label field-media-group field-tall">
                             <span class="field-text">미디어 대수</span>
@@ -1035,6 +923,10 @@
                             <span class="field-text field-text-bold">총 {{미디어대수}}대</span>
                             <span class="field-text">{{미디어유형/사이즈/간격/대수}}</span>
                         </div>
+                    </div>
+
+                    <!-- Frame 1686563156: 세 번째 행 (운영 시간) -->
+                    <div class="frame-media-info-row-2">
                         <div class="field field-label field-media-group field-tall">
                             <span class="field-text">운영 시간</span>
                         </div>
@@ -1043,7 +935,7 @@
                         </div>
                     </div>
 
-                    <!-- Frame 13: 세 번째 행 -->
+                    <!-- Frame 13: 네 번째 행 (콘텐츠 정보) -->
                     <div class="frame-media-info-row-3">
                         <div class="field field-label field-media-group">
                             <span class="field-text">콘텐츠 정보</span>
@@ -1051,12 +943,18 @@
                         <div class="field field-value field-media-group">
                             <span class="field-text">{{콘텐츠정보}}</span>
                         </div>
+                    </div>
+
+                    <!-- Frame 1686563157: 다섯 번째 행 (광고 운영 방식) -->
+                    <div class="frame-media-info-row-3">
                         <div class="field field-label field-media-group">
                             <span class="field-text">광고 운영 방식</span>
                         </div>
                         <div class="field field-value field-media-group">
                             <span class="field-text">{{광고운영방식}}</span>
                         </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -1075,15 +973,15 @@
                 <div class="breadcrumb-bar">
                     <!-- Breadcrumb 내부 -->
                     <div class="breadcrumb-items">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
                         <span class="text-목차-media">미디어그룹별 효과 분석</span>
                         <span class="text-separator-media">></span>
                         <span class="text-미디어그룹명-media">{{미디어그룹명}}</span>
                     </div>
                 </div>
-                <!-- 공공 미디어 중개 플랫폼 ADeX -->
-                <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                <!-- 디지털 옥외광고 통합 시스템 Dooh Service -->
+                <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
             </div>
 
             <!-- Frame 1686563155: 콘텐츠 영역 -->
@@ -1308,15 +1206,15 @@
                 <div class="breadcrumb-bar">
                     <!-- Breadcrumb 내부 -->
                     <div class="breadcrumb-items">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
                         <span class="text-목차-media">미디어그룹별 효과 분석</span>
                         <span class="text-separator-media">></span>
                         <span class="text-미디어그룹명-media">{{미디어그룹명}}</span>
                     </div>
                 </div>
-                <!-- 공공 미디어 중개 플랫폼 ADeX -->
-                <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                <!-- 디지털 옥외광고 통합 시스템 Dooh Service -->
+                <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
             </div>
 
             <!-- Container: 제목 영역 -->
@@ -1451,15 +1349,15 @@
                 <div class="breadcrumb-bar">
                     <!-- Breadcrumb 내부 -->
                     <div class="breadcrumb-items">
-                        <span class="text-광고계약명-media">{{광고계약명}}</span>
+                        <span class="text-스케줄명-media">{{스케줄명}}</span>
                         <span class="text-separator-media">|</span>
                         <span class="text-목차-media">미디어그룹별 효과 분석</span>
                         <span class="text-separator-media">></span>
                         <span class="text-미디어그룹명-media">{{미디어그룹명}}</span>
                     </div>
                 </div>
-                <!-- 공공 미디어 중개 플랫폼 ADeX -->
-                <div class="text-platform-media">공공 미디어 중개 플랫폼 ADeX</div>
+                <!-- 디지털 옥외광고 통합 시스템 Dooh Service -->
+                <div class="text-platform-media">디지털 옥외광고 통합 시스템 Dooh Service</div>
             </div>
 
             <!-- Container: 제목 영역 -->
@@ -1599,8 +1497,8 @@
                     <div class="frame-logo-back-cover">
                         <img src="icon-group.png" alt="ADeX 로고" class="logo-back-cover">
                     </div>
-                    <!-- ADeX 서비스 운영팀 -->
-                    <div class="text-service-team-back-cover">ADeX 서비스 운영팀</div>
+                    <!-- Dooh Service 서비스 운영팀 -->
+                    <div class="text-service-team-back-cover">Dooh Service 서비스 운영팀</div>
                 </div>
 
                 <!-- Rectangle 14: 구분선 -->
@@ -1958,14 +1856,12 @@
             //             유동인구: 120000,
             //             노출인구: 85000,
             //             색상: 미디어그룹컬러팔레트[0],
-            //             유사미디어그룹: false
             //         },
             //         {
             //             미디어그룹명: '홍대입구역 빌딩',
             //             유동인구: 80000,
             //             노출인구: 60000,
             //             색상: 미디어그룹컬러팔레트[1],
-            //             유사미디어그룹: true // 유사 미디어그룹은 색상을 연하게
             //         }
             //     ]
             // };
@@ -1977,31 +1873,27 @@
                         미디어그룹명: '강남역 2호선 지하철 광고',
                         circulation: 120000,
                         ots: 85000,
-                        색상: 미디어그룹컬러팔레트[0],
-                        유사미디어그룹: false
+                        색상: 미디어그룹컬러팔레트[0]
                     },
                     {
                         미디어그룹명: '홍대입구역 빌딩',
                         circulation: 80000,
                         ots: 60000,
-                        색상: 미디어그룹컬러팔레트[1],
-                        유사미디어그룹: true
+                        색상: 미디어그룹컬러팔레트[1]
                     },
                     {
                         미디어그룹명: '시청역 빌딩',
                         circulation: 100000,
                         ots: 75000,
-                        색상: 미디어그룹컬러팔레트[2],
-                        유사미디어그룹: false
+                        색상: 미디어그룹컬러팔레트[2]
                     }
                 ]
             };
 
             const datasets = 미디어그룹별circulationots데이터.미디어그룹리스트.map((그룹, index) => {
                 const 색상 = 그룹.색상 || 미디어그룹컬러팔레트[index % 미디어그룹컬러팔레트.length];
-                // 유사 미디어그룹은 색상을 연하게
-                const circulation색상 = 그룹.유사미디어그룹 ? '#D0E8F5' : '#4DADFF';
-                const ots색상 = 그룹.유사미디어그룹 ? '#B3E6CC' : '#00C5A3';
+                const circulation색상 = '#4DADFF';
+                const ots색상 = '#00C5A3';
                 
                 return [
                     {
@@ -2101,14 +1993,12 @@
             //             유동인구: 120000,
             //             노출인구: 85000,
             //             색상: 미디어그룹컬러팔레트[0],
-            //             유사미디어그룹: false
             //         },
             //         {
             //             미디어그룹명: '홍대입구역 빌딩',
             //             유동인구: 80000,
             //             노출인구: 60000,
             //             색상: 미디어그룹컬러팔레트[1],
-            //             유사미디어그룹: true // 유사 미디어그룹은 색상을 연하게
             //         }
             //     ]
             // };
@@ -2120,29 +2010,25 @@
                         미디어그룹명: '강남역 2호선 지하철 광고',
                         유동인구: 120000,
                         노출인구: 85000,
-                        색상: 미디어그룹컬러팔레트[0],
-                        유사미디어그룹: false
+                        색상: 미디어그룹컬러팔레트[0]
                     },
                     {
                         미디어그룹명: '홍대입구역 빌딩',
                         유동인구: 80000,
                         노출인구: 60000,
-                        색상: 미디어그룹컬러팔레트[1],
-                        유사미디어그룹: true
+                        색상: 미디어그룹컬러팔레트[1]
                     },
                     {
                         미디어그룹명: '시청역 빌딩',
                         유동인구: 100000,
                         노출인구: 75000,
-                        색상: 미디어그룹컬러팔레트[2],
-                        유사미디어그룹: false
+                        색상: 미디어그룹컬러팔레트[2]
                     },
                     {
                         미디어그룹명: '명동역 지하상가',
                         유동인구: 95000,
                         노출인구: 70000,
-                        색상: 미디어그룹컬러팔레트[3],
-                        유사미디어그룹: false
+                        색상: 미디어그룹컬러팔레트[3]
                     }
                 ]
             };

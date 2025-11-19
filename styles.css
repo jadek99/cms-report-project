@@ -9,13 +9,13 @@
     --scale-factor: 1.33333;
     
     /* 색상 */
-    --color-primary: #3e7eff;
+    --color-primary: #58C65D;
     --color-text-primary: #ffffff;
     --color-text-secondary: #9e9e9e;
     --color-background: #000000;
     --color-container-bg: #222222;
     --color-container-bg-opacity: rgba(34, 34, 34, 0.9);
-    --color-toc-border: #92b7ff;
+    --color-toc-border: #B5FFB8;
     --color-toc-text-light: #eeeeee;
     --color-toc-text-medium: #bdbdbd;
     --color-toc-text-dark: #616161;
@@ -122,7 +122,7 @@ section.page {
     background-color: var(--color-background);
 }
 
-/* 미디어그룹 상품 정보 페이지: 배경 이미지 제거, 흰색 배경 */
+/* 미디어그룹 정보 페이지: 배경 이미지 제거, 흰색 배경 */
 section.page.page-media-info {
     background-image: none;
     background-color: #ffffff;
@@ -130,6 +130,10 @@ section.page.page-media-info {
 
 section.page.page-media-info.page-back-cover {
     background-color: transparent;
+    background-image: url('back-cover-bg.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 section.page:last-child {
@@ -146,7 +150,7 @@ section.page:last-child {
     overflow: hidden;
 }
 
-/* 미디어그룹 상품 정보 페이지 컨테이너: 배경 투명도 제거, 흰색 배경 */
+/* 미디어그룹 정보 페이지 컨테이너: 배경 투명도 제거, 흰색 배경 */
 .container-media-info {
     background-color: #ffffff;
     opacity: 1;
@@ -395,7 +399,7 @@ section.page:last-child {
         page-break-after: auto;
     }
     
-    /* 미디어그룹 상품 정보 페이지: 인쇄 시 배경 이미지 제거, 흰색 배경 */
+    /* 미디어그룹 정보 페이지: 인쇄 시 배경 이미지 제거, 흰색 배경 */
     section.page.page-media-info {
         background-image: none;
         background-color: #ffffff;
@@ -403,6 +407,10 @@ section.page:last-child {
     
     section.page.page-media-info.page-back-cover {
         background-color: transparent;
+        background-image: url('back-cover-bg.png') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
     
     .container {
@@ -414,7 +422,7 @@ section.page:last-child {
         position: relative;
     }
     
-    /* 미디어그룹 상품 정보 페이지 컨테이너: 인쇄 시 배경 투명도 제거, 흰색 배경 */
+    /* 미디어그룹 정보 페이지 컨테이너: 인쇄 시 배경 투명도 제거, 흰색 배경 */
     .container-media-info {
         background-color: #ffffff;
         opacity: 1;
@@ -464,16 +472,32 @@ section.page:last-child {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 2px;
+    gap: 8px;
     width: fit-content; /* Hug: 콘텐츠에 맞춤 */
-    height: 14px;
+    height: 19px;
     flex: none;
     order: 0;
     flex-grow: 0;
     flex-shrink: 0;
 }
 
-.text-광고계약명 {
+.text-스케줄명 {
+    width: fit-content; /* Hug: 콘텐츠에 맞춤 */
+    height: 14px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -0.25px;
+    color: #9E9E9E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.text-스케줄명 {
     width: fit-content; /* Hug: 콘텐츠에 맞춤 */
     height: 14px;
     font-family: 'Pretendard';
@@ -522,7 +546,7 @@ section.page:last-child {
 }
 
 .text-platform {
-    width: 146px;
+    width: fit-content; /* Hug: 콘텐츠에 맞춤 */
     height: 14px;
     font-family: 'Pretendard';
     font-style: normal;
@@ -564,7 +588,7 @@ section.page:last-child {
     top: 150px;
     width: 963px;
     height: 35px;
-    border-left: 6px solid #92b7ff;
+    border-left: 6px solid #B5FFB8;
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -583,7 +607,7 @@ section.page:last-child {
     font-size: 27px;
     line-height: 35px;
     letter-spacing: -0.25px; /* -1px * 1.33333 */
-    color: #92b7ff;
+    color: #B5FFB8;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -897,7 +921,7 @@ ol.text-subsection-content.media-group-list {
     font-size: 53px;
     line-height: 64px;
     letter-spacing: -0.25px; /* -1px * 1.33333 */
-    color: #1462ff;
+    color: #58C65D;
     margin: 0;
     padding: 0;
 }
@@ -973,14 +997,14 @@ ol.text-subsection-content.media-group-list {
     font-size: 22px;
     line-height: 26px;
     letter-spacing: -0.25px;
-    color: #053fb2;
+    color: #1F7022;
     width: fit-content;
     height: auto;
     text-align: left;
 }
 
 /* ============================================
-   미디어그룹 상품 정보 페이지 스타일
+   미디어그룹 정보 페이지 스타일
    ============================================ */
 
 /* head: 헤더 영역 (Frame 10) */
@@ -1020,7 +1044,7 @@ ol.text-subsection-content.media-group-list {
     flex-shrink: 0;
 }
 
-.text-광고계약명-media,
+.text-스케줄명-media,
 .text-separator-media {
     font-family: 'Pretendard';
     font-style: normal;
@@ -1055,7 +1079,7 @@ ol.text-subsection-content.media-group-list {
     font-size: 16px; /* 16px */
     line-height: 19px; /* 20px */
     letter-spacing: -0.25px; /* -1px */
-    color: #1462ff;
+    color: #58C65D;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -1084,7 +1108,7 @@ ol.text-subsection-content.media-group-list {
     font-size: 37px; /* 38px */
     line-height: 52px; /* 53px */
     letter-spacing: -0.25px; /* -1px */
-    color: #1462ff;
+    color: #58C65D;
     margin: 0;
     padding: 0;
 }
@@ -1346,7 +1370,7 @@ ol.text-subsection-content.media-group-list {
     font-size: 16px;
     line-height: 20px; /* font-size * 1.2 */
     letter-spacing: -0.25px;
-    color: #012672; /* 피그마 디자인과 동일한 색상 */
+    color: #333333; /* 피그마 디자인과 동일한 색상 */
     word-break: break-word;
     width: 100%; /* 가로 fill */
     flex: 1 1 auto; /* 가로 fill */
@@ -1379,11 +1403,11 @@ ol.text-subsection-content.media-group-list {
 
 /* 두 번째 행 */
 .table-row-middle td.field:nth-child(1) {
-    /* 미디어그룹 상품 라벨 */
+    /* 미디어그룹 라벨 */
     width: 120px;
 }
 .table-row-middle td.field:nth-child(2) {
-    /* 미디어그룹 상품 값 */
+    /* 미디어그룹 값 */
     width: 261px;
 }
 .table-row-middle td.field:nth-child(3) {
@@ -1432,7 +1456,7 @@ ol.text-subsection-content.media-group-list {
 }
 
 .field-value .field-text {
-    color: #012672;
+    color: #333333;
     font-weight: 500; /* Medium */
 }
 
@@ -1457,7 +1481,7 @@ ol.text-subsection-content.media-group-list {
 }
 
 .field-text-blue {
-    color: #012672;
+    color: #333333;
 }
 
 .field-text-14 {
@@ -1674,8 +1698,8 @@ ol.text-subsection-content.media-group-list {
     align-items: center; /* 기본값: 아이콘과 텍스트 수평 중앙 정렬 */
     padding: 10px; /* 모든 여백 10px */
     gap: 10px; /* 아이콘과 텍스트 간격 10px */
-    background-color: #e9f1ff;
-    border: 1px solid #bcd3ff;
+    background-color: #EEF9EF;
+    border: 1px solid #9BD39D;
     border-radius: 4px;
     height: auto; /* hug */
 }
@@ -1812,12 +1836,12 @@ ol.text-subsection-content.media-group-list {
 }
 
 .insight-value {
-    color: #0a4acc; /* 노출 비율 텍스트 색상 */
+    color: #1F7022; /* 노출 비율 텍스트 색상 */
     font-weight: 500;
 }
 
 .insight-highlight {
-    color: #0a4acc; /* 강조 텍스트 색상 */
+    color: #1F7022; /* 강조 텍스트 색상 */
     font-weight: 500;
 }
 
@@ -2084,18 +2108,6 @@ canvas[id="chart-canvas"] {
     color: #00CF75;
 }
 
-/* frame-insight-notice: 유사 미디어그룹 선별 안내 인사이트 박스 (info 프레임) */
-.frame-insight-notice {
-    position: absolute;
-    top: 520px;
-    left: 0px; /* 좌측 정렬 */
-    height: 62.81px;
-    bottom: 54px;
-    width: 1016px;
-    flex-direction: column;
-    gap: 12px; /* Frame 24와 Frame 1686563118 사이 간격 */
-    align-items: flex-start; /* 내용 좌측 정렬 */
-}
 
 
 /* tip title: 아이콘 + 제목 텍스트 */
@@ -2123,7 +2135,7 @@ canvas[id="chart-canvas"] {
     font-size: 12px;
     line-height: 120%; /* identical to box height, or 15px */
     letter-spacing: -0.25px;
-    color: #003399;
+    color: #1F7022;
 }
 
 /* 인사이트 텍스트 (tips 프레임용) */
@@ -2378,7 +2390,7 @@ canvas[id="chart-canvas"] {
     font-size: 16px;
     line-height: 20px; /* font-size * 1.2 */
     letter-spacing: -0.25px;
-    color: #012672;
+    color: #333333;
     vertical-align: middle; /* 수직 가운데 정렬 */
     text-align: left; /* 좌측 정렬 */
     width: 100%; /* 가로 fill */
@@ -2398,83 +2410,6 @@ canvas[id="chart-canvas"] {
     border-bottom: none;
 }
 
-/* 유사 미디어그룹 헤더 */
-.performance-table-wrapper .similar-media-group-header {
-    position: relative;
-    left: 0px;
-    top: 0px; /* frame-table-performance3 내부에서 상대 위치 */
-    width: 1016px;
-    height: 29px;
-    margin-top: 0px; /* 테이블과의 간격은 테이블의 margin-bottom으로 조정 */
-    background-color: #eeeeee;
-    border: 1px solid #eeeeee;
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-}
-
-/* similar-media-group-header: performance-table-wrapper 밖의 경우 (다른 페이지용) */
-.similar-media-group-header:not(.performance-table-wrapper .similar-media-group-header) {
-    position: absolute;
-    left: 0px;
-    top: 268px;
-    width: 1016px;
-    height: 29px;
-    background-color: #eeeeee;
-    border: 1px solid #eeeeee;
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-}
-
-.similar-media-group-header-field {
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: -0.25px;
-    color: #616161;
-}
-
-/* 유사 미디어그룹 헤더 행 */
-.frame-table-performance3 tbody .similar-media-group-header-row {
-    height: 29px;
-}
-
-.frame-table-performance3 tbody .similar-media-group-header-row td.field {
-    padding: 8px 16px;
-    background-color: #eeeeee;
-    color: #616161;
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: -0.25px;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-/* 유사 미디어그룹 행 */
-.frame-table-performance3 tbody .similar-media-group-row {
-    height: 52px;
-}
-
-/* 유사 미디어그룹 행 invisible 처리 */
-.frame-table-performance3 tbody .similar-media-group-row.invisible,
-.frame-table-performance3 tbody .similar-media-group-row[style*="display: none"],
-.frame-table-performance3 tbody .similar-media-group-row[style*="display:none"] {
-    display: none !important;
-}
-
-/* field-tall-similar: 2줄 텍스트용 */
-.field-tall-similar {
-    vertical-align: top;
-    padding-top: 8px;
-}
 
 /* 페이지 7 테이블 stroke (다른 필드와 동일 색상) */
 .page-performance-3 .frame-table-performance3 {
@@ -2506,21 +2441,6 @@ canvas[id="chart-canvas"] {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.field-value-item-similar {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.field-text-small-similar {
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: -0.25px;
-    color: #012672;
-}
 
 .field-text-normal {
     font-family: 'Pretendard';
@@ -2529,7 +2449,7 @@ canvas[id="chart-canvas"] {
     font-size: 16px;
     line-height: 20px; /* font-size * 1.2 */
     letter-spacing: -0.25px;
-    color: #012672;
+    color: #333333;
 }
 
 /* performance-table-section 안의 tips 인사이트 박스 */
@@ -3155,7 +3075,7 @@ canvas[id="chart-canvas"] {
     font-size: 35px; /* 35px */
     line-height: 49px; /* 49px */
     letter-spacing: -0.25px; /* -1px */
-    color: #1462ff;
+    color: #58C65D;
     margin: 0;
     padding: 0;
     margin-bottom: 0px;
@@ -3244,10 +3164,10 @@ canvas[id="chart-canvas"] {
 /* Frame 30: 이미지 1 */
 .frame-media-map-image {
     position: relative;
-    flex: 1 1 320px;
-    max-width: 320px;
-    height: 245px;
-    border-radius: 6px;
+    flex: 0 0 400px;
+    width: 400px;
+    height: 400px;
+    border-radius: 4px;
     border: 1px solid #f5f5f5;
     overflow: hidden;
 }
@@ -3283,7 +3203,7 @@ canvas[id="chart-canvas"] {
 
 /* 동적 지도 컨테이너 (JavaScript API 사용 시) */
 .media-group-map {
-    width: 100%;
+    width: 400px;
     height: 100%;
     border: none;
     border-radius: 6px;
@@ -3370,11 +3290,13 @@ canvas[id="chart-canvas"] {
 
 /* Frame 20: 미디어그룹 광고 개요 */
 .frame-media-overview {
-    position: absolute;
-    left: 54px;
-    top: 480px; /* frame-media-image-area top (163px) + height (245px) + 간격 40px = 448px */
-    width: 1016px;
-    height: auto;
+    position: relative;
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 414px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Frame 21: 제목 + 광고 기간 정보 */
@@ -3382,8 +3304,8 @@ canvas[id="chart-canvas"] {
     position: relative;
     left: 0px;
     top: 0px;
-    width: 1016px;
-    height: 24px;
+    width: 100%;
+    height: 19px;
     border-left: 4px solid #616161;
     border-right: none;
     border-bottom: none;
@@ -3391,7 +3313,7 @@ canvas[id="chart-canvas"] {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 16px;
+    padding-left: 12px;
 }
 
 /* 미디어그룹 광고 개요 제목 */
@@ -3399,9 +3321,9 @@ canvas[id="chart-canvas"] {
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 600; /* SemiBold */
-    font-size: 20px; /* 22px */
-    line-height: 26px; /* 26px */
-    letter-spacing: -0.25px; /* -1px */
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.064px;
     color: #616161;
     margin: 0;
     padding: 0;
@@ -3473,16 +3395,17 @@ canvas[id="chart-canvas"] {
     position: relative;
     left: 0px;
     top: 26px; /* Frame 21 아래 간격 */
-    width: 1016px;
-    height: auto;
-    border: none; /* 스트로크 제거 */
-    outline: none; /* outline 제거 */
+    width: 100%;
+    height: auto; /* hug: 내용에 맞게 자동 조정 */
+    border: 1px solid #e0e0e0;
+    outline: none;
     border-radius: 4px;
-    overflow: hidden;
+    overflow: visible;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     gap: 0px;
+    min-height: 0; /* flex 아이템이 축소될 수 있도록 */
 }
 
 /* Frame 18: 첫 번째 행 */
@@ -3502,11 +3425,17 @@ canvas[id="chart-canvas"] {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 40px; /* 3페이지 테이블 스타일과 동일 */
+    height: auto;
     min-height: 40px;
     border: none; /* 스트로크 제거 */
     outline: none; /* outline 제거 */
     gap: 0px; /* 필드 간 간격 0px */
+}
+
+/* Frame 20: field-tall이 있는 경우 높이 auto */
+.frame-media-info-row-2:has(.field-tall) {
+    flex: 1; /* fill: 남은 공간을 채움 */
+    min-height: 76px;
 }
 
 /* Frame 13: 세 번째 행 */
@@ -3667,12 +3596,14 @@ canvas[id="chart-canvas"] {
     padding: 0px 16px;
     justify-content: flex-start;
     align-items: center;
+    height: 100%; /* fill: 부모 행의 높이를 채움 */
 }
 
 .page-media-group-detail .field-value.field-media-group.field-tall {
-    padding: 0px 16px;
+    padding: 12px 16px;
     justify-content: center;
     align-items: flex-start;
+    height: 100%; /* fill: 부모 행의 높이를 채움 */
 }
 
 /* Media count overflow handling */
@@ -3707,7 +3638,7 @@ canvas[id="chart-canvas"] {
     font-size: 16px; /* 19px */
     line-height: 23px; /* 23px */
     letter-spacing: -0.25px; /* -1px */
-    color: #012672;
+    color: #333333;
 }
 
 /* Field text bold: 굵은 텍스트 */
@@ -3716,7 +3647,7 @@ canvas[id="chart-canvas"] {
     font-size: 14px; /* 19px */
     line-height: 19px; /* 20px */
     letter-spacing: -0.25px; /* -1px */
-    color: #012672;
+    color: #333333;
     display: block;
     margin-bottom: 4px;
 }
@@ -3762,13 +3693,36 @@ canvas[id="chart-canvas"] {
     width: 1016px;
     height: auto;
     display: flex;
+    flex-direction: column; /* 기본값: 세로 레이아웃 */
+    gap: 32px;
+}
+
+/* 페이지 13: frame-head를 사용하는 경우 row 레이아웃 */
+.frame-head ~ .media-detail-content {
     flex-direction: column;
     gap: 32px;
+    align-items: flex-start; /* 좌측 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+}
+
+/* 지도와 미디어그룹 광고 개요 컨테이너 */
+.frame-media-map-overview-container {
+    position: absolute;
+    top: 112px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* 지도(318px)와 테이블(414px) 사이 간격 30px */
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 /* 페이지 14: chapter-2-header와 콘텐츠 간격 46px */
 .page-media-group-detail .media-detail-content {
     top: 120px; /* chapter-2-header (54px + 20px) + gap (46px) = 120px */
+    flex-direction: column; /* 14페이지는 세로 레이아웃 */
+    gap: 32px; /* 세로 간격 */
 }
 
 /* 노출 효과 분석 */
@@ -4062,8 +4016,8 @@ canvas[id="chart-canvas"] {
 }
 
 .frame-insight-visualization {
-    background-color: #e9f1ff;
-    border: 1px solid #e0e0e0;
+    background-color: #EEF9EF;
+    border: 1px solid #9BD39D;
     border-radius: 6px;
     width: 496px;
     padding: 10px 16px;
